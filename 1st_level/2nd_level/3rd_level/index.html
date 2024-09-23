@@ -3,13 +3,16 @@
 <html lang="ru">
     <head>
         <title>MC Shcherbina</title>
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stil.css" media="screen">
     </head>
 
     <body>
         <header>
-            <img src="logo.png" alt="logo">
-            <h1>Щербина Мирон, 15/2</h1>
+            <div id="header">
+                <img src="logo.png" alt="logo">
+                <h1>Щербина Мирон, 15/2</h1>
+            </div>
             <nav>
                 <a href="#Links">Ссылки</a>
                 <a href="#Table">Таблица</a>
@@ -50,18 +53,6 @@
                 <li>Здесь может быть какой-то текст, и внезапно <a href="https://kubsu.ru/">ТУТ</a> появляется ссылка на главную КубГУ</li>
                 <!-- 14 -->
                 <li><a href="https://site.com/file1#about">На фрагмент страницы стороннего сайта</a></li>
-                <!-- 15 -->
-                <li>
-                    <img src="kvadrat_krug.png" width="500" height="289" alt="Квадрат и круг" usemap="#areas">
-                    <map id="areas" name="areas">
-                        <area shape="rect" coords="80,90,185,195" 
-                        href="https://kubsu.ru/" 
-                        alt="Квадрат" title="Квадрат">
-                        <area shape="circle" coords="370,145,55" 
-                        href="https://ru.wikipedia.org/wiki/%D0%9A%D1%83%D0%B1%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82" 
-                        alt="Круг" title="Круг">
-                    </map>
-                </li>
                 <!-- 16 -->
                 <li><a href="">Ссылка с пустым href</a></li>
                 <!-- 17 -->
@@ -87,7 +78,7 @@
         </main>
         <br><br>
 
-        <section>
+        <section  id="section-table">
             <h2 id="Table">Таблица</h2>
             <table>
                 <tr  style="background-color: bisque;">
