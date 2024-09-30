@@ -1,0 +1,31 @@
+.navbar{
+    background:#303ac7;
+   }
+
+.nav-link , .navbar-brand{
+    color: #f4f4f4;
+}
+
+.nav-link{
+    margin-right: 1em !important;
+}
+
+nav a.navbar-brand {
+    font-size: 20pt;
+}
+
+body {
+    background-color: #7aa9bb;
+}
+
+#section_table {
+    overflow: scroll;
+}
+
+#section_links, #section_table, #section_form {
+    background-color: #b0c5ce;
+}
+
+#footer {
+    background-color: #8fb5fd;
+}

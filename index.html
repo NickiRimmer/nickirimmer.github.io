@@ -3,10 +3,216 @@
 <html lang="ru">
     <head>
         <title>MC Shcherbina</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" media="screen">
     </head>
 
-    <body>
-        <h1>Как вы сюда попали?!</h1>
-        <a href="./1st_level/2nd_level/3rd_level/index.html">Вернуться на главную</a>
+    <body class="d-flex flex-column">
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand mx-0" href="#">
+                <img src="logo.png" alt="logo" class="col-2 col-md-2">
+                <span class="fs-1 text-wrap">Задание 4</span>
+            </a>
+            <div class="nav-item">
+                <ul class="navbar-nav mr-4">
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#Links">Ссылки</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#Table">Таблица</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#Form">Форма</a>
+                    </li>
+                </ul>
+            </div>
+         </nav>
+        
+        <main class="conteiner-fluid order-2 order-sm-1">
+            <div class="row gx-0">
+                <div class="col-0 col-sm-1 col-md-2"></div>
+                <div class="col-12 col-sm-10 col-md-8 p-4 my-5 border border-5 border-success" id="section_links">
+                    <h2 id="Links" >Ссылки</h2>
+                    <ul>
+                        <li><a href="http://kubsu.ru">Абсолютная ссылка на главную</a></li>
+                        <li><a href="https://kubsu.ru/">Абсолютная ссылка на главную в протоколе https</a></li>
+                        <li><a href="https://www.drive2.ru/o/b/607609917792077142"><img src="foto.jpg" alt="Multipla" class="col-12" ></a></li>
+                        <li><a href="4th_level/1_lvl_upper.html">Сокращённая ссылка на внутреннюю</a></li>
+                        <li><a href="./index.html">Сокращенная ссылка на главную</a></li>
+                        <li><a href="#forma">Cсылка на фрагмент текущей</a></li>
+                        <li><a href="https://kubsu.ru/?par1=X&param2=Y&param3=Q">Здесь будет ссылка с тремя параметрами</a></li>
+                        <li><a href="../../../about/about.html#easter_egg">Здесь будет ссылка с id</a></li>
+                        <li><a href="sth.html">Относительная в текущем каталоге</a></li>
+                        <li><a href="../../../about/about.html">Относительная в каталоге about</a></li>
+                        <li><a href="../1_lvl_lower.html">Относительная в каталоге выше</a></li>
+                        <li><a href="../../2_lvl_lower.html">Относительная в каталоге выше на два</a></li>
+                        <li>Здесь может быть какой-то текст, и внезапно <a href="https://kubsu.ru/">ТУТ</a> появляется ссылка на главную КубГУ</li>
+                        <li><a href="https://site.com/file1#about">На фрагмент страницы стороннего сайта</a></li>
+                        <li><a href="">Ссылка с пустым href</a></li>
+                        <li><a>kubsu.ru</a></li>
+                        <li><a href="../../../index.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                        <!--noindex-->
+                        <li><a href="../../../index.html">Ссылка, которую запрещено индексировать поисковикам</a></li>
+                        <!--/noindex-->
+                        <li>
+                            Нумерованный список ссылок с подписями title: <br>
+                            <ol>
+                                <li><a href="href1" title="Это первая ссылка">href1</a></li>
+                                <li><a href="href2" title="Это вторая ссылка">href2</a></li>
+                                <li><a href="href3" title="Это третья ссылка">href3</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="ftp://user:password@site.com">FTP с авторизацией</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto"></div>
+            </div>
+        </main>
+
+        <section class="conteiner-fluid row gx-0 order-1 order-sm-2">
+            <div class="col-0 col-sm-1 col-md-2"></div>
+            <div class="col-12 col-sm-10 col-md-8 p-4 my-5 border border-5 border-success" id="section_table">
+                <h2 id="Table">Таблица</h2>
+                <table>
+                    <tr  style="background-color: bisque;">
+                        <th class="border border-dark">Заголовок столбца 1</th>
+                        <th class="border border-dark">Заголовок столбца 2</th>
+                        <th class="border border-dark">Заголовок столбца 3</th>
+                        <th class="border border-dark">Заголовок столбца 4</th>
+                        <th class="border border-dark">Заголовок столбца 5</th>
+                    </tr>
+                    <tr>
+                        <td class="border border-dark" >Ячейка 1</td>
+                        <td class="border border-dark" >Ячейка 2</td>
+                        <td class="border border-dark" >Ячейка 3</td>
+                        <td class="border border-dark" >Ячейка 4</td>
+                        <td class="border border-dark" >Ячейка 5</td>
+
+                    </tr>
+                    <tr style="background-color: bisque;">
+                        <td class="border border-dark"  colspan="3">Ячейка 6</td>
+                        <td class="border border-dark"  rowspan="3">Ячейка 7</td>
+                        <td class="border border-dark" >Ячейка 8</td>
+
+                    </tr>
+                    <tr>
+                        <td class="border border-dark"  rowspan="2">Ячейка 9</td>
+                        <td class="border border-dark" >Ячейка 10</td>
+                        <td class="border border-dark" >Ячейка 11</td>
+                        <td class="border border-dark" >Ячейка 12</td>
+
+                    </tr>
+                    <tr style="background-color: bisque;">
+                        <td class="border border-dark" >Ячейка 13</td>
+                        <td class="border border-dark"  rowspan="2">Ячейка 14</td>
+                        <td class="border border-dark" >Ячейка 15</td>
+
+                    </tr>
+                    <tr>
+                        <td class="border border-dark" >Ячейка 16</td>
+                        <td class="border border-dark" >Ячейка 17</td>
+                        <td class="border border-dark" >Ячейка 18</td>
+                        <td class="border border-dark" >Ячейка 19</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-auto"></div>
+        </section>
+
+        <section class="conteiner row gx-0 order-3">
+            <div class="col-0 col-sm-1 col-md-2"></div>
+            <div class="col-12 col-sm-10 col-md-8 p-4 my-5 border border-5 border-success" id="section_form">
+                <h2 id="Form">Форма</h2>
+                <form action="file:///C:/" method="post" id="forma">
+                    <label>
+                        ФИО:
+                        <input name="field-name"
+                        placeholder="Иванов Иван Иванович">
+                    </label>
+                    <br>
+                    <label>
+                        Телефон: 
+                        <input name="field-phone"
+                        value="+7 (918) 123-45-67"
+                        type="tel">
+                    </label>
+                    <br>
+                    <label>
+                        Электронная почта: 
+                        <input name="field-email"
+                        placeholder="example@mail.ru"
+                        type="email">
+                    </label>
+                    <br>
+                    <label>
+                        Дата рождения:
+                        <input name="field-date"
+                        type="date">
+                    </label>
+                    <br>
+                    <a>Пол: </a>
+                    <label>
+                        <input type="radio" 
+                        name="radio-group-1"
+                        value="man">
+                        Мужской
+                    </label>
+                    <label>
+                        <input type="radio" 
+                        name="radio-group-1"
+                        value="woman">
+                        Женский
+                    </label>
+                    <br>
+                    <label>
+                        Любимый язык программирования:
+                        <br>
+                        <select name="field-language-[]"
+                        multiple="multiple">
+                            <option value="Pascal">Pascal</option>
+                            <option value="C">C</option>
+                            <option value="C++">C++</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="Haskel">Haskel</option>
+                            <option value="Clojure">Clojure</option>
+                            <option value="Prolog">Prolog</option>
+                            <option value="Scala">Scala</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label>
+                        Ваша биография:
+                        <br>
+                        <textarea  name="field-biography"></textarea>
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="check-1">
+                        С контраком ознакомлен(а)
+                    </label>
+                    <br>
+                    <label>
+                        Сохранить форму: 
+                        <input type="submit" value="Отправить">
+                    </label>
+                    <br>
+                </form>
+            </div>
+        </section>
+
+        <footer class="conteiner-fluid row gx-0 border-top border-5 border-info-subtle order-4" id="footer">
+            <div class="col-1"></div>
+            <div class="col-6"  id="sign">&copy;Щербина Мирон</div>
+            <div class="col-4">Далее обязательный текст:<br>
+                <a href="https://ru.freepik.com/free-vector/modern-conectivity-logo-template_3344556.htm#query=logo%20site&position=14&from_view=keyword&track=ais_hybrid&uuid=dbd01e20-829c-4065-9ddb-37d417d2efd3">
+                    Изображение-лого от freepik
+                </a>
+            </div>
+            <div class="col-1"></div>
+        </footer>
     </body>
 </html>
