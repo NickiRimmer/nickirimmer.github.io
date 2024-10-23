@@ -1,31 +1,23 @@
-.navbar{
-    background:#303ac7;
-   }
-
-.nav-link , .navbar-brand{
-    color: #f4f4f4;
+.container {
+    margin:  30px 10%;
 }
 
-.nav-link{
-    margin-right: 1em !important;
+.slick-prev:before, .slick-next:before {
+    color: black;
 }
 
-nav a.navbar-brand {
-    font-size: 20pt;
+.col-1 {
+    text-align: center;
+    margin: auto;
 }
 
-body {
-    background-color: #7aa9bb;
+img {
+    margin: auto;
+    display: inline-block;
+    align-self: center;
+    max-width: 80%;
 }
 
-#section_table {
-    overflow: scroll;
-}
-
-#section_links, #section_table, #section_form {
-    background-color: #b0c5ce;
-}
-
-#footer {
-    background-color: #8fb5fd;
+.slick-dots {
+    bottom: -48px;
 }
