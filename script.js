@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("modal");
 
-    // Открытие модального окна
     document.getElementById("open").addEventListener("click", function (e) {
         modal.style.display = "grid";
         history.pushState({ modalOpen: true }, "", "?modal=true");
@@ -14,19 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Закрытие модального окна при нажатии на кнопку "Назад"
     addEventListener("popstate", function (e) {
         modal.style.display = "none";
         history.pushState(null, "", window.location.pathname);
     });
 
-    // Закрытие модального окна
     document.getElementById("close").addEventListener("click", function () {
         modal.style.display = "none";
         history.pushState(null, "", window.location.pathname);
     });
 
-    // Сохранение данных в LocalStorage
     document.getElementById("form").addEventListener("input", function () {
         var fields = ["name", "email", "phone", "org", "mess"];
         fields.forEach(function (field) {
