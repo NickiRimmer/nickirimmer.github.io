@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 
 <html lang="ru">
-  <head>
-    <title>MC Shcherbina</title>
-    
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="jquery-3.4.1.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
-    <script src="script.js" defer></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div class="container">
-      <div class="slider">
-        <div class="col-1"><img src="1.jpg" alt="picture1"></div>
-        <div class="col-1"><img src="2.jpg" alt="picture2"></div>
-        <div class="col-1"><img src="3.jpg" alt="picture3"></div>
-        <div class="col-1"><img src="4.png" alt="picture4"></div>
-        <div class="col-1"><img src="5.png" alt="picture5"></div>
-        <div class="col-1"><img src="6.jpg" alt="picture6"></div>
-        <div class="col-1"><img src="7.png" alt="picture7"></div>
-        <div class="col-1"><img src="8.png" alt="picture8"></div>
-      </div>
+<head>
+  <!--meta http-equiv="Content-Type" content="text/html; charset=UTF-8"-->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MC Shcherbina</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://carrier.formcarry.com/js/v1.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="open">
+    <button id="open">
+      <span>Открыть форму обратной связи</span>
+    </button>
+  </div>
+
+  <div class="modal" id="modal" style="display: none;">
+    <div class="modal-content">
+
+      <span class="close" id="close">×</span>
+
+      <h2>Форма обратной связи</h2>
+
+      <form id="form" class="formcarryForm" action="https://formcarry.com/s/bPVbAl8kg4f" method="POST" enctype="multipart/form-data">
+
+        <label>Имя:</label> 
+        <input id="name" placeholder="Иванов Иван" name="name" type="text">
+
+        <label>E-mail: </label>
+        <input id="email" placeholder="examle@mail.ru" name="email" type="email">
+
+        <label>Phone: </label>
+        <input id="phone" placeholder="8 (800) 555-35-35" name="phone" type="tel">
+
+        <label>Организация: </label>
+        <input id="org" name="organisation" type="text">
+
+        <label>Massage</label>
+        <textarea id="mess" name="mess"></textarea>
+
+
+        <label>
+          Согласен с политикой обработки персональных данных
+          <input id="agree" type="checkbox">
+        </label>
+        
+        <button type="submit">Отправить</button>
+      </form>
+      <div id="responseMessage"></div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
